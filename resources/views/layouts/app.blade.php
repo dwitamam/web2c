@@ -14,9 +14,21 @@
 
 <body>
     @include('inc.navbar')
+    
+    <div class="container">
+        <!-- pesan validasi -->
+        @include('inc.messages')
+    </div>
+    
     <!-- Memanggil content -->
     @yield('content')
     @include('inc.footer')
+
+
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
 </body>
 
 </html>
