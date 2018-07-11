@@ -4,5 +4,6 @@ type 'composer install' on the cloned directory from github
 copy .env.example become .env, make sure there is 'APP_ENV=local' inside the file
 type 'php artisan key:generate'
 composer require "laravelcollective/html":"^5.4.0"
+composer require unisharp/laravel-ckeditor
 
 done

@@ -14,6 +14,20 @@
                         </div>
                     @endif
                     <a href="/posts/create" class="btn btn-primary">Create Post</a>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Title</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        @foreach($posts as $post)
+                        <tr>
+                            <td>{{$post->title}}</td>
+                            <td><a href="/posts/{{$post->id}}"/edit class="btn btn-primary">Edit</a></td>
+                            <td></td>
+                        </tr>
+                        @endforeach
+                    </table>
                 </div>
             </div>
         </div>
