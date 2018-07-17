@@ -28,12 +28,12 @@
         @include('inc.navbar')
     
         <div class="container">
-            <!-- pesan validasi -->
+            <!-- pesan validasi --><br>
             @include('inc.messages')
         </div>
         
         <!-- Memanggil content -->
-        @yield('content')
+        @yield('content') <br>
         @include('inc.footer')
     
     
