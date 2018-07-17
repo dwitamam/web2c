@@ -11,13 +11,13 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Artikel dan Review</a>
+                    <a href="#staff-ahli" class="nav-link">Staff Ahli</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Konsultasi dan Tanya Jawab</a>
+                    <a href="#konsultasi" class="nav-link">Konsultasi</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About Me</a>
+                    <a href="#" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a href="/posts" class="nav-link">Posts</a>

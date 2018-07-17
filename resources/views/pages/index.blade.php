@@ -1,12 +1,12 @@
 @extends('layouts.app') @section('content')
 
 
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" id="staff-ahli">
     <h1>Staf Ahli Kami</h1>
     <p>Kami memiliki beberapa Staf yang sangat ahli di bidangnya masing - masing</p>
 
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4"  >
             <h4>Hardware and Gadget</h4>
             <img src=" {{asset('images/staff_mandr.jpeg')}} " alt="" style="height: 170px; width: 125px;" >
             <p>Staff Ahli Hardware dan Gadget kami <b>Eka Prayudi S.Kom</b> a.k.a <b>MandR</b> .</p>
@@ -24,19 +24,24 @@
     </div>
 </div>
 
-<div class="container">
-    <h2>Konsultasikan Masalah Anda</h2>
+<div class="container text-center" id="konsultasi" >
+    <h2> Konsultasikan Masalah Anda</h2>
 
     <div class="row">
-        <div class="col-sm-6">
+        
+        <div class="col-sm-6 align-self-center">
+            
             <p>Belum Punya Akun ? Segera Mendaftar !</p>
             <a href="/register" class="btn btn-info">Daftar</a>
+            
         </div>
         <div class="col-sm-6">
+            
             <p>Sudah Ada ? Langsung Login !</p>
             <a href="/login" class="btn btn-primary">Login</a>
+            
         </div>
-    </div>
+    </div><br>
 
 </div>
 
