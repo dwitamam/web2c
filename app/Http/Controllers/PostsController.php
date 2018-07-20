@@ -109,12 +109,14 @@ class PostsController extends Controller
         //
         $this->validate($request, [
             'title' => 'required',
+            'description' => 'required',
             'body' => 'required'
             ]);
 
             // Create Post
             $post = Post::find($id);
             $post->title = $request->input('title');
+            $post->description = $request->input('description');
             $post->body = $request->input('body');
             $post->save();
 
