@@ -16,6 +16,10 @@ Route::get('/index2', 'PagesController@index2');
 
 Route::resource('posts', 'PostsController');
 
+
 Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index');
+
+// Comment Routes
+//Route::resource('posts.comments', 'CommentsController');

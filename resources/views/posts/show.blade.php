@@ -18,7 +18,11 @@
             {{Form::hidden('_method', 'DELETE')}}
             {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
         {!!Form::close()!!}
+
+        <!-- Comments Form -->
+       
+
         @endif
         @endif
-    </div>
+
 @endsection

@@ -31,4 +31,9 @@ class User extends Authenticatable
     public function posts(){
         return $this->hasMany('App\Post');
     }
+
+    // relationship with Comment Model
+    public function comment(){
+        return $this->hasMany('App\Comment');
+    }
 }
