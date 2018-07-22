@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 use App\Comment;
 use App\Post;
-use App\Http\Requests\CommentRequest;
+use App\Http\Controllers\Controller;
+use App\Http\Requests;
 
 class CommentsController extends Controller
 {
@@ -42,16 +44,11 @@ class CommentsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CommentRequest $request)
+    public function store(Request $request)
     {
-        $post = Post::findOrFail($request->post_id);
+        $comment = new Comment;
 
-        Comment::create([
-            'body' => $request->body,
-            'user_id' => Auth::id(),
-            'post_id' => $post->id
-        ]);
-        return redirect()->route('posts.show', $post->id);
+        $comment->comment_messages = $request->comment_messages;
     }
 
     /**

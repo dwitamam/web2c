@@ -22,4 +22,4 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
 
 // Comment Routes
-//Route::resource('posts.comments', 'CommentsController');
+Route::resource('comments', 'CommentsController');
