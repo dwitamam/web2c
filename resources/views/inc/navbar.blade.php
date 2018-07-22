@@ -20,7 +20,7 @@
                     <a href="#" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/posts" class="nav-link">Posts</a>
+                    <a href="/posts" class="nav-link">Post3s</a>
                 </li> 
             </ul>
 
